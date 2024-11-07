@@ -92,9 +92,32 @@
             background-color: #333333;
             color: #ffffff; /* Подсветка текста при наведении */
         }
+
+                /* Стили для боковых элементов */
+        .left-character, .right-character {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 0;
+            opacity: 0.7; /* Полупрозрачность */
+        }
+        
+        .left-character {
+            left: 10px;
+            max-width: 100px; /* Настройка размера */
+        }
+        
+        .right-character {
+            right: 10px;
+            max-width: 100px;
+        }
     </style>
 </head>
 <body>
+
+    <img src="left_character.png" alt="Левый персонаж" class="left-character">
+    <img src="right_character.png" alt="Правый персонаж" class="right-character">
+    
     <div class="container">
         <h1>Моя визитка</h1>
         <!-- Кнопка с иконкой Telegram -->
