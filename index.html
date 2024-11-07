@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка</title>
+    <!-- Подключаем Font Awesome для иконок -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Подключение кастомного шрифта (если есть) */
+        @font-face {
+            font-family: 'Determination Mono Rus';
+            src: url('DeterminationMonoRus.woff') format('woff'); /* Путь к файлу шрифта */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Основные стили */
+        body {
+            font-family: 'Determination Mono Rus', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #121212; /* Темный фон */
+            color: #ffffff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #333;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Почти на всю ширину экрана */
+            max-width: 500px; /* Ограничение для больших экранов */
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        /* Стили кнопок */
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; /* Ширина кнопки по контейнеру */
+            margin: 15px 0;
+            padding: 18px 0; /* Увеличенные кнопки */
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button i {
+            margin-right: 10px; /* Отступ между иконкой и текстом */
+            font-size: 24px; /* Размер иконки */
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Моя визитка</h1>
+        <!-- Кнопка с иконкой Telegram -->
+        <a href="https://t.me/ваш_телеграм" class="button">
+            <i class="fab fa-telegram-plane"></i> Мой Telegram
+        </a>
+        <!-- Кнопка с иконкой TikTok -->
+        <a href="https://www.tiktok.com/@ваш_тик_ток" class="button">
+            <i class="fab fa-tiktok"></i> Мой TikTok
+        </a>
+        <!-- Кнопка с иконкой Game Jolt -->
+        <a href="https://gamejolt.com/@ваш_геймджолт" class="button">
+            <i class="fas fa-gamepad"></i> Мой Game Jolt
+        </a>
+    </div>
+</body>
+</html>
