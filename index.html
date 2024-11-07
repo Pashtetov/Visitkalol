@@ -70,6 +70,26 @@
         .button:hover {
             background-color: #0056b3;
         }
+
+                /* Стиль для кнопки доната */
+        .donate-button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px 0;
+            font-size: 18px;
+            color: #aaaaaa; /* Более сдержанный цвет */
+            background-color: #282828;
+            border: 1px solid #444; /* Слабая обводка */
+            border-radius: 5px;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .donate-button:hover {
+            background-color: #333333;
+            color: #ffffff; /* Подсветка текста при наведении */
+        }
     </style>
 </head>
 <body>
@@ -86,7 +106,12 @@
         <!-- Кнопка с иконкой Game Jolt -->
         <a href="https://gamejolt.com/@ваш_геймджолт" class="button">
             <i class="fas fa-gamepad"></i> Game Jolt
+        </a>   
+                    <!-- Менее заметная кнопка для доната -->
+        <a href="https://www.donationalerts.com/r/ваш_донат" class="donate-button">
+            Поддержать меня
         </a>
+        
     </div>
 </body>
 </html>
